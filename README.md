@@ -137,7 +137,7 @@ npx @solana-program/program-metadata@latest create-buffer ./target/idl/let_me_bu
 npx @solana-program/program-metadata@latest set-buffer-authority <buffer-address> --new-authority <multisig-address>
 ```
 
-3. Export the transaction as base58 and then import it into your multisig under `developers/txBuilder/createTransaction/addInstruction/ImportAsBase58`
+3. Export the transaction as base58 and then import it into your multisig under `developers/txBuilder/createTransaction/addInstruction/ImportAsBase58` npx @solana-program/program-metadata@latest write idl $PROGRAM_ID ./idl.json
 
 ```bash
 npx @solana-program/program-metadata@latest write idl <program-address> --buffer <buffer-address> --export <multisig-address> --export-encoding base58 --close-buffer <your-address-to-get-the-buffer-rent-back>
